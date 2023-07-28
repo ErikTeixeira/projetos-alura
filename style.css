@@ -6,6 +6,8 @@
     --botao-azul: #167BF7;
     --cor-de-fundo: #00030C;
     --fonte-principal: 'Inter', sans-serif;
+    --efeito-botao-azul: #2880ed;
+    --efeito-trasicao: #000000;
 }
 
 * {
@@ -56,6 +58,11 @@ body {
     color: var(--branco-principal);
     display: block;
     margin-bottom: 1em;
+}
+
+.container__botao:hover {
+    background-color: var(--efeito-botao-azul);
+    color: var(--efeito-trasicao);
 }
 
 .botao__secundario {
@@ -118,4 +125,33 @@ body {
 .lista__item {
     font-size: 1.8rem;
     color: var(--branco-principal);
+}
+
+
+.rodape {
+    text-align: center;
+    margin: 5em 3em;
+}
+
+.rodape__lista {
+    display: flex;
+    list-style-type: none;
+    margin: 1.2em 0;
+    justify-content: center;
+}
+
+.lista__link a{
+    text-decoration: none;
+    color: var(--branco-principal);
+    margin-left: 1em;
+}
+
+.rodape__texto {
+    color: var(--cinza-secundario);
+    margin: 1em 0;
+    font-size: 14px;
+}
+
+.lista__link a:hover {
+    color: var(--botao-azul);
 }
